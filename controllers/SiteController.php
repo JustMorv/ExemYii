@@ -128,6 +128,72 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+    public function actionUsers()
+    {
+        return $this->render('users'); // Рендерит страницу пользователей
+    }
+
+    /**
+     * Displays the client base analysis page.
+     *
+     * @return string
+     */
+    public function actionAnalysis()
+    {
+        return $this->render('analysis'); // Рендерит страницу анализа клиентской базы
+    }
+    public function actionPredictive()
+    {
+        return $this->render('predictive');
+    }
+
+    // Сегментация данных
+    public function actionSegmentation()
+    {
+        return $this->render('segmentation');
+    }
+    public function actionDiagnostic()
+    {
+        return $this->render('diagnostic');
+    }
+
+    // Персонализация
+    public function actionPersonalization()
+    {
+        return $this->render('personalization');
+    }
+
+    // Автоматизированная рассылка
+    public function actionMailing()
+    {
+        return $this->render('mailing');
+    }
+
+    // Архитектура системы
+    public function actionArchitecture()
+    {
+        return $this->render('architecture');
+    }
+
+    /**
+     * Displays the send messages page.
+     *
+     * @return string
+     */
+    public function actionMessages()
+    {
+        return $this->render('messages'); // Рендерит страницу отправки сообщений
+    }
+
+    /**
+     * Displays the system settings page.
+     *
+     * @return string
+     */
+    public function actionSettings()
+    {
+        return $this->render('settings'); // Рендерит страницу настроек системы
+    }
 
     /**
      * Displays about page.
